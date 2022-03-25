@@ -1,0 +1,37 @@
+@import "styles/variables";
+
+.search-input-user {
+  padding: 4px 4px 4px 16px;
+  box-sizing: border-box;
+  border-radius: $border-radius-small;
+  border: 1px solid $blue-gray-100;
+
+  .input-search {
+    input {
+      border: none;
+      width: calc(289px + 65px);
+
+      &::placeholder {
+        color: $blue-gray-400;
+      }
+    }
+  }
+
+  .btn-search {
+    margin-left: 40px !important;
+    position: relative;
+
+    .clear-input {
+      position: absolute;
+      left: -35px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    button {
+      height: 40px;
+      width: 98px;
+      border-radius: 8px !important;
+    }
+  }
+}

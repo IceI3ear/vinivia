@@ -1,0 +1,26 @@
+@import "styles/variables";
+
+.breadcrumb-item {
+  a {
+    &:hover {
+      color: $vinivia-pink-500;
+    }
+  }
+}
+.ant-breadcrumb > span:first-child a {
+  &:hover {
+    color: $blue-gray-400;
+  }
+  cursor: auto;
+}
+.ant-breadcrumb > span:last-child a {
+  color: $vinivia-pink-500;
+  cursor: auto;
+}
+.breadcrumb {
+  display: flex;
+  span {
+    display: flex;
+    align-items: center;
+  }
+}

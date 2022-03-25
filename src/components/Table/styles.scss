@@ -1,0 +1,43 @@
+@import "styles/variables";
+
+.table-container {
+  font-family: $font-family;
+  margin: 16px 36px 0 36px;
+  .ant-table-container table > thead > tr:first-child {
+    th.ant-table-cell {
+      background-color: $blue-gray-50;
+      font-weight: bold !important;
+      font-size: $font-size-normal;
+    }
+    th:first-child {
+      border-top-left-radius: $border-radius-medium;
+      border-bottom-left-radius: $border-radius-medium;
+    }
+    th:last-child {
+      border-top-right-radius: $border-radius-medium;
+      border-bottom-right-radius: $border-radius-medium;
+    }
+  }
+  .ant-table-cell::before {
+    display: none;
+  }
+  .ant-table.ant-table-empty {
+    .ant-table-tbody {
+      height: 50vh;
+      td.ant-table-cell {
+        border-bottom: unset;
+      }
+    }
+  }
+  .ant-table-tbody {
+    tr.ant-table-row {
+      color: $blue-gray-700;
+      cursor: pointer;
+    }
+  }
+  .ant-table-body {
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}

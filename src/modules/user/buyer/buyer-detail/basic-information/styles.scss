@@ -1,0 +1,111 @@
+@import "styles/variables";
+
+.basic-information-container {
+  margin: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .basic-information-form {
+    .avt {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .camera {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 100rem;
+        background-color: $blue-gray-100;
+        position: absolute;
+        left: calc(50% - 24px / 2);
+        top: 108px;
+      }
+      .none {
+        display: none;
+      }
+    }
+    .input-form {
+      .input-group {
+        display: flex;
+        .input {
+          width: 352px;
+          height: 56px;
+          margin: 16px 12px;
+          .lbl-input {
+            font-size: $font-size-tiny;
+            color: $blue-gray-700;
+          }
+          .ant-input-disabled {
+            background-color: $blue-gray-50;
+            color: $blue-gray-900;
+          }
+          .ant-picker-suffix {
+            color: $blue-gray-900;
+          }
+          .phone {
+            .phone-number {
+              width: 352px;
+              height: 56px;
+              padding: 14px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $blue-gray-900;
+              border: 1px solid $blue-gray-200;
+              box-sizing: border-box;
+              border-radius: $border-radius-medium;
+              transition: 0.25s;
+              cursor: no-drop;
+              &:hover,
+              &:focus {
+                border-color: #e67ca8;
+                box-shadow: 0 0 0 2px rgb(216 82 142 / 20%);
+                transition: 0.25s;
+              }
+              &:disabled {
+                background-color: $blue-gray-50;
+              }
+            }
+          }
+        }
+        .ant-picker {
+          height: 56px !important;
+        }
+        .status {
+          width: 352px;
+          height: 56px;
+          margin: 16px 12px;
+          .lbl-status {
+            font-size: $font-size-tiny;
+            color: $blue-gray-700;
+          }
+        }
+        .ant-select-selector {
+          height: 56px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .button {
+      margin: 38px 12px;
+      display: flex;
+      justify-content: flex-end;
+      button {
+        height: 48px;
+      }
+      .span-tittle-button {
+        padding-left: 12px;
+      }
+    }
+    .button-update {
+      display: flex;
+      justify-content: flex-end;
+      .button-update-item {
+        margin-left: 24px;
+      }
+    }
+  }
+}

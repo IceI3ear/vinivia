@@ -1,0 +1,28 @@
+@import "styles/variables";
+
+.seller-detail-header {
+  margin: 0 20px;
+  .sidebar {
+    display: flex;
+    .navlink-inactive {
+      padding: 8px 16px;
+      margin: 0 0 16px 16px;
+      background: $white;
+      color: $blue-gray-400;
+      border: 1px solid $blue-gray-100;
+      box-sizing: border-box;
+      border-radius: $border-radius-tiny;
+      transition: 0.5s;
+    }
+    .navlink-active {
+      padding: 8px 16px;
+      margin: 0 0 16px 16px;
+      background: #fbedf3;
+      color: $vinivia-pink-500;
+      border: 1px solid $white;
+      box-sizing: border-box;
+      border-radius: $border-radius-tiny;
+      transition: 0.5s;
+    }
+  }
+}

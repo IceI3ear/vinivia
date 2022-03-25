@@ -1,0 +1,98 @@
+@import "styles/variables";
+@import "styles/index";
+
+.form-password {
+  border-radius: 20px;
+  .ant-modal-content {
+    border-radius: 16px !important;
+  }
+  .ant-form-item-label label {
+    color: #696984;
+  }
+  .common-modal-wrapper .ant-modal-content .ant-modal-body {
+    padding: 0px !important;
+  }
+  .current-password .ant-form-item-with-help .ant-form-item-explain {
+    min-height: 0px !important;
+  }
+  .show-err
+    .ant-form-item-explain
+    .ant-form-item-explain-connected
+    .ant-form-item-explain-error {
+    min-height: 0px !important;
+  }
+  .anticon-check-circle svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .anticon-close-circle {
+    display: none !important;
+  }
+  .ant-input-suffix svg {
+    width: 20px !important;
+    height: 20px !important;
+    path {
+      fill: #696984;
+    }
+  }
+  .title {
+    font-family: $font-semibold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 22px;
+    color: #696984;
+    margin-bottom: 16px;
+  }
+  .description-error {
+    font-size: 14px;
+    line-height: 22px;
+    color: red;
+    margin-bottom: 16px;
+  }
+  .ant-form-item {
+    margin-bottom: 16px !important;
+  }
+  .ant-form-item-extra {
+    font-size: 14px;
+    line-height: 22px;
+    color: #696984;
+    margin: 24px 0 0 0 !important;
+  }
+
+  .ant-btn-default {
+    width: 120px;
+    height: 48px;
+    background: white !important;
+    border-color: #e56c76 !important;
+    border-radius: 12px;
+    span {
+      font-size: 16px;
+    }
+    color: #e56c76;
+  }
+  .ant-btn-primary {
+    width: 120px;
+    height: 48px;
+    background: $background-gradient !important;
+    border-color: transparent !important;
+    border-radius: 12px;
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .ant-form-inline .ant-form-item-with-help {
+    margin-bottom: 0px !important;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-close-x {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+.ant-form-item.form-input {
+  flex-direction: column;
+  text-align: left;
+  input {
+    padding: 14px;
+    border-radius: 10px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .ant-form-item-explain-error {
+    float: right;
+    font-style: italic;
+  }
+  .ant-input[disabled] {
+    background-color: #ffffff;
+  }
+  .ant-input {
+    &:hover {
+      border-color: #e67ca8;
+      box-shadow: 0 0 0 2px rgb(216 82 142 / 20%);
+    }
+    &:focus {
+      border-color: #e67ca8;
+      box-shadow: 0 0 0 2px rgb(216 82 142 / 20%);
+    }
+  }
+  .ant-form-item-label {
+    text-align: inherit;
+    .ant-form-item-required {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import "styles/variables";
+
+.modal-select-country {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e7e7ec;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d9d9e0;
+    border-radius: 3px;
+  }
+  .ant-modal-content {
+    border-radius: 24px;
+    padding: 24px;
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #2c2c37;
+    margin-bottom: 16px;
+  }
+  .ant-modal-close-x {
+    display: none;
+  }
+  .ant-modal-footer {
+    border: 0px;
+    padding: 0;
+    button {
+      box-shadow: unset;
+      font-weight: 600 !important;
+      width: 120px;
+      height: 48px;
+
+      &:first-child {
+        background: white;
+        border-radius: $border-radius-small;
+        border: 1px solid $vinivia-pink-500;
+        color: $vinivia-pink-500;
+      }
+
+      &:last-child {
+        background: linear-gradient(225deg, #e56c76 0%, #d8528e 100%);
+        border-radius: $border-radius-small;
+        border: none;
+        color: white;
+      }
+    }
+  }
+  .input {
+    height: 56px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    .ant-input {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .ant-input-prefix svg {
+      margin-right: 18px;
+    }
+    &:hover {
+      border-color: #e67ca8;
+      box-shadow: 0 0 0 2px rgb(216 82 142 / 20%);
+    }
+    &:focus {
+      border-color: #e67ca8;
+      box-shadow: 0 0 0 2px rgb(216 82 142 / 20%);
+    }
+  }
+  .list-country {
+    height: 390px;
+    .country-row-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 16px 0;
+      font-size: $font-size-normal;
+      color: $blue-gray-700;
+      cursor: pointer;
+    }
+    .country-row-container-selected {
+      color: #d8528e;
+    }
+    .country-row {
+      display: flex;
+      align-items: center;
+      .area-code {
+        width: 80px;
+        height: 24px;
+        margin: 0 16px;
+      }
+    }
+    .suffix-icon {
+      margin: 0 18px;
+    }
+  }
+}

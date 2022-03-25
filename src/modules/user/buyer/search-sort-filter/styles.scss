@@ -1,0 +1,23 @@
+@import "styles/variables";
+
+.block-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px 36px;
+
+  form {
+    .ant-form-item {
+      margin: 0;
+    }
+  }
+
+  .sort-filter-container {
+    div {
+      button {
+        height: 48px;
+        border-radius: 8px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "styles/variables";
+
+.address-item-container {
+  margin: 24px 36px 0 0;
+  width: 770px;
+  height: 162px;
+  border: 1px solid $blue-gray-100;
+  box-sizing: border-box;
+  border-radius: $border-radius-large;
+  color: $blue-gray-700;
+  font-size: $font-size-normal;
+  .address-item-header {
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .address-item-name {
+      align-items: center;
+      display: flex;
+      p {
+        font-weight: 600;
+      }
+      .default {
+        margin: 0 12px;
+        padding: 4px 8px;
+        color: $white;
+        font-size: $font-size-tiny;
+        background: linear-gradient(225deg, #e56c76 0%, #d8528e 100%);
+        border-radius: $border-radius-tiny;
+      }
+    }
+    .address-item-control {
+      .pencil-icon {
+        margin: 0 12px;
+        cursor: pointer;
+        path {
+          fill: $blue-gray-700 !important;
+        }
+      }
+      .control-icon {
+        width: 10px !important;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .address-item-content {
+    .address-item-row {
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      .icon {
+        margin: 0 18px;
+      }
+    }
+  }
+}
+
+.menu-control-address {
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 6px 4px;
+  margin-top: 10px;
+  .delete > p {
+    color: $red;
+  }
+}

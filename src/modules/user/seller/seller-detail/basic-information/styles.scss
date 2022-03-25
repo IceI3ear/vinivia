@@ -1,0 +1,130 @@
+@import "styles/variables";
+
+.seller-information {
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      margin-top: -64px;
+    }
+  }
+
+  .form-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .form-information-wrap {
+      .lbl-input {
+        font-size: $font-size-tiny;
+        color: $blue-gray-700;
+      }
+
+      .ant-input-disabled {
+        background-color: $blue-gray-50;
+        color: $blue-gray-900;
+      }
+
+      .shop_name {
+        width: 728px;
+
+        input {
+          width: 100%;
+          height: 56px;
+        }
+      }
+      .input-group {
+        display: flex;
+        .input-item {
+          margin-right: 24px;
+          width: 352px;
+          &:last-child {
+            margin-right: 0;
+          }
+          .ant-picker-input {
+            background-color: $blue-gray-50;
+            color: $blue-gray-900;
+            #createdDatee {
+              color: $blue-gray-900;
+            }
+            .ant-picker-suffix {
+              color: $blue-gray-900;
+            }
+          }
+          .phone {
+            .phone-number {
+              width: 352px;
+              height: 56px;
+              padding: 14px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $blue-gray-900;
+              border: 1px solid $blue-gray-200;
+              box-sizing: border-box;
+              border-radius: $border-radius-medium;
+              transition: 0.25s;
+              cursor: no-drop;
+              &:hover,
+              &:focus {
+                border-color: #e67ca8;
+                box-shadow: 0 0 0 2px rgb(216 82 142 / 20%);
+                transition: 0.25s;
+              }
+              &:disabled {
+                background-color: $blue-gray-50;
+              }
+            }
+          }
+        }
+        .status {
+          .ant-select-selector {
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .description {
+        .ant-input-disabled {
+          background-color: $blue-gray-50;
+          color: $blue-gray-900;
+          opacity: unset;
+        }
+
+        .form-input-wrapper {
+          width: 728px;
+        }
+      }
+    }
+
+    .btn-edit {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 728px;
+      button {
+        height: 48px;
+      }
+
+      .span-tittle-button {
+        padding-left: 12px;
+      }
+
+      .button-update {
+        display: flex;
+        .button-update-item {
+          margin-left: 24px;
+          button {
+            width: 122.5px;
+          }
+        }
+      }
+    }
+  }
+}
